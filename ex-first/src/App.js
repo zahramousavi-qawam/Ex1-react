@@ -1,8 +1,9 @@
-import React from 'react';
-import Product from "./components/Product/Product";
-    
+import React, {useState} from 'react';
+import HookCounter from './components/Product/HookCounter';
+import Product from './components/Product/Product'
+import CounterClass from './components/Product/ClassCounter';
 //Class App.............................
-class App extends React.Component{
+/*class App extends React.Component{
    
     state = {
         Products : [
@@ -35,25 +36,56 @@ class App extends React.Component{
 }
 
 export default App;
-
+*/
 //Functional App...............
-/*const App=()=>{
-    state = {
+
+
+
+   /* state = {
         Products : [
             {title:"React.js" , price:"99$"},
             {title:"Node.js" , price:"89$"},
             {title:"js" , price:"79$"},
         ],
+    };*/
+/*const stateData = useState([
+    {title:"React.js" , price: "90$"},
+]);
+    console.log(stateData);
+
+    const [Products , setProducts ] = useState ([
+        {title:"React.js" , price:"99$"},
+        {title:"Node.js" , price:"89$"},
+        {title:"js" , price:"79$"},
+    ]);
+
+    const clickHandler =() =>{
+        setProducts([
+          {title:"React.js" , price:"79$"},
+          {title:"Node.js" , price:"69$"},
+          {title:"js" , price:"89$"},
+        ]);
     };
+    
     return(
         <div className='container' id='title'>
         <h1>Shopping App</h1>
-        {this.state.Products.map((Product) => {
+        {Products.map((Product) => {
             return <Product name={Product.title} price={Product.price} />;
         })}
     
-    
-    </div>
+        <button onClick={clickHandler}>Change Price</button>
+        </div>
     );
+    */
+    function App() {
+
+        return(
+            <div className='App'>
+                <CounterClass/>
+            </div>
+        );
+
     };
-    export default App;*/
+
+    export default App;
