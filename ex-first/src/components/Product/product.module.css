@@ -1,0 +1,56 @@
+.product{
+    border: 1px solid rgba(231, 95, 224, 0.61);
+    border-radius: 15px;
+    padding: 20px 40px;
+    box-shadow: 20px 20px 50px 10px pink inset;
+    display: flex;
+    justify-content: space-around;
+    width: 40rem;
+    margin-top: 15px;
+
+}
+
+
+.spanvalue{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fdf2f8;
+    color: #be185d;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.spanid{
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    background-color: #fdf2f8;
+    color: #be185d;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.incbtn{
+    background-color:#d9f99d;
+    color:#4d7c0f;
+}
+.delbtn{
+    background-color:#fb7185;
+    color: #e11d48;
+
+}
+
+.btn{
+    width: 50px;
+    height: 20px;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+}
+.inputtitle{
+    width: 80px;
+    height: 20px;
+    border: none;
+    border-radius: 10%;
+}

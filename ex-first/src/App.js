@@ -2,41 +2,57 @@ import React, {useState} from 'react';
 import HookCounter from './components/Product/HookCounter';
 import Product from './components/Product/Product'
 import CounterClass from './components/Product/ClassCounter';
+import './App.css'
+import ProductList from './components/ProductList/ProductList';
 //Class App.............................
-/*class App extends React.Component{
+class App extends React.Component{
    
     state = {
-        Products : [
-            {title:"React.js" , price:"99$"},
-            {title:"Node.js" , price:"89$"},
-            {title:"js" , price:"79$"},
-        ],
+       
+        count:0,
     };
 
-    clickHandler = () =>{
-        this.setState({
-            Products : [
-                {title:"React.js" , price:"79$"},
-                {title:"Node.js" , price:"69$"},
-                {title:"js" , price:"89$"},
-            ],
-        })
-    }
+    // clickHandler = (newTitle) =>{
+    //     console.log("change Price");
+    //     this.setState({
+    //         Products : [
+    //             {title:"React.js" , price:"79$"},
+    //             {title:"Node.js" , price:"69$"},
+    //             {title:newTitle , price:"89$"},
+    //         ],
+    //     })
+    // };
+
+    // constructor(props){
+    //     super(props);
+    //     this.countHandler=this.countHandler.bind(this);
+    //     console.log("constructor",this);
+    // }
+
+    // countHandler=(id)=>{
+    //     console.log("count clickesd",id );
+    //     this.setState({count:this.state.count + 1});
+       
+    // };
+
     render() {
         return(
         <div className='container' id='title'>
-        <h1>Shopping App</h1>
-        {this.state.Products.map((product) => {
-            return <Product name={product.title} price={product.price} />;
-        })}
-        <button onClick={this.clickHandler}>Change Price</button>
+        <h1 className='shoph1'>Shopping App</h1>
+        <ProductList/>
+
+        
+        {/* <button onClick={this.clickHandler}>Change Price</button>
+        <button onClick={()=>this.countHandler(2)}> 
+        Counter :{this.state.count}
+        </button> */}
     </div>
     );
-    }
+  }
 }
 
 export default App;
-*/
+
 //Functional App...............
 
 
@@ -77,7 +93,7 @@ export default App;
         <button onClick={clickHandler}>Change Price</button>
         </div>
     );
-    */
+    
     function App() {
 
         return(
@@ -89,3 +105,4 @@ export default App;
     };
 
     export default App;
+    */
